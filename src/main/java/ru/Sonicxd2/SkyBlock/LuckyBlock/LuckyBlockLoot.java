@@ -10,14 +10,17 @@ import org.bukkit.entity.Player;
  * @author Sonicxd2
  */
 @AllArgsConstructor
-public abstract class LuckyBlockLoot {
+public class LuckyBlockLoot {
     
     @Getter Rare rare;
     
+    @Getter LuckyBlockLootRealisation lbr;
     
-    /**
-    * @param p Игрок сломавший блок
-    * @param loc Координаты блока
-    */
-    public abstract void action(Player p, Location loc);
+    public static interface LuckyBlockLootRealisation{
+        /*
+        * @param p - Игрок сломавший блок
+        * @param loc - Координаты блока
+        */
+        public void action(Player p, Location loc);
+    }
 }

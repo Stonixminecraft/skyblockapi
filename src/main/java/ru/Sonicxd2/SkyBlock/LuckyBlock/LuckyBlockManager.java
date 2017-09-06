@@ -13,8 +13,15 @@ public class LuckyBlockManager {
     /**
     * @param luckyBlock Зарегистрировать лакиблок.
     */
-
     public static void registerLuckyBlockLoot(LuckyBlockLoot luckyBlock){
     }
+    
+    /**
+     * 
+     * @param realisation Реализация лакиблока
+     * @param rare Шанс выпадения
+     */
+    public static void registerLuckyBlockLoot(LuckyBlockLoot.LuckyBlockLootRealisation realisation, Rare rare){}
+    
     
 }
